@@ -1,0 +1,259 @@
+:root
+{
+  --orange: #FF8200;
+  --blue: #00CEFF;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: red 2px solid; */
+}
+html, body, section{
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* inspo */
+/* https://garfieldrobotics.com/ */
+/* https://lancerrobotics.com/ */
+/* https://www.ftc7244.org/ */
+
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--orange);
+}
+.nav-center{
+  max-width: 1250px;
+  width: 95vw;
+  /* background: red; */
+}
+.nav-header{
+  height: 7rem;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-header img{
+  width: 150px;
+}
+.nav-logo{
+  display: flex;
+  align-items: center;
+}
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.show-links{
+  /* change when adding more links */
+  height: 260px;
+}
+.nav-link{
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  border-top: 1px solid var(--blue);
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+} 
+.nav-link:hover{
+  /* Find better color */
+  color: var(--blue);
+}
+
+@media screen and (min-width:992px) {
+  .nav-btn{
+    display: none;
+  }
+  .navbar{
+    /* height: 7rem; */
+    height: auto;
+    background: var(--orange);
+  }
+  .nav-center{
+    display: flex;
+    align-items: center;
+  }
+  .nav-header{
+    height: auto;
+    margin-right: 2rem;
+  }
+  .nav-links{
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+  }
+  .nav-link{
+    padding: 0;
+    border-top: none;
+    margin-right: 2rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+  }
+}
+/* Hero */
+.hero{
+  /* Sizing */
+  width: 100%;
+  height: 90%;
+  /* height: 50rem; */
+    
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+  /* Text styles */
+  text-align: center;
+    
+  /* Background styles */
+  background-image: url("./HERO.jpeg");
+  background-size: cover;
+  background-position: center 15%;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+.hero-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width:620px) {
+  .hero{
+    height: 50%;
+  }
+}
+
+/* About us */
+.about-us .container{
+  background: var(--blue);
+  width: 100%;
+  /* height: 25rem; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.about-content{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  margin-left: 5vw;
+}
+.about-header{
+  color: var(--orange);
+}
+.about-text{
+  width: 60%;
+  min-width: 10rem;
+  color: white;
+  font-size: 20px;
+}
+.about-img{
+  width: 50%;
+  max-width: 40rem;
+  margin-right: 2%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.flex{
+  display: flex;
+}
+@media screen and (max-width:992px) {
+  .about-content{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .about-text{
+    width: 95%;
+  }
+}
+/* robot highlight */
+.robot-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background: var(--orange);
+}
+.robot-word-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.robot-img{
+  margin: 1rem;
+  width: 60%;
+  max-width: 650px;
+}
+.robot-name{
+  margin-top: 3rem;
+}
+.robot-season{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.robot-text{
+  width: 45%;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width:992px) {
+  .robot-content{
+    flex-direction: row;
+  }
+  .robot-word-content{
+    justify-content: left;
+    text-align: left;
+  }
+  .robot-text{
+    width: 70%;
+  }
+  .robot-img{
+    margin-left: 10%;
+  }
+  .about-img{
+    margin-right: 10%;
+  }
+  .robot-highlight .container{
+    /* Sizing */
+    width: 100%;
+    height: 30%;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    /* Text styles */
+    text-align: left;
+    color: white;
+    
+    /* Background styles */
+    background-image: url("./RobotHighlight.jpg");
+    background-size: cover;
+    background-position: 40%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
