@@ -13,6 +13,9 @@ html, body, section{
   height: 100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+p{
+  font-size: 20px;
+}
 /* inspo */
 /* https://garfieldrobotics.com/ */
 /* https://lancerrobotics.com/ */
@@ -164,12 +167,13 @@ html, body, section{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  max-width: 1400px;
 }
 .about-header{
   color: white;
 }
 .about-text{
-  width: 60%;
+  width: 80%;
   min-width: 10rem;
   color: white;
   font-size: 20px;
@@ -224,6 +228,7 @@ html, body, section{
 }
 .robot-name{
   margin-top: 3rem;
+  font-size: 2rem;
 }
 .robot-season{
   margin-top: 1rem;

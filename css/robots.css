@@ -1,0 +1,209 @@
+:root
+{
+  --orange: #FF8200;
+  --blue: #00CEFF;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: red 2px solid; */
+}
+html, body, section{
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+  font-size: 20px;
+}
+/* inspo */
+/* https://garfieldrobotics.com/ */
+/* https://lancerrobotics.com/ */
+/* https://www.ftc7244.org/ */
+
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--orange);
+}
+.nav-center{
+  max-width: 1250px;
+  width: 95vw;
+  /* background: red; */
+}
+.nav-header{
+  height: 7rem;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-header img{
+  width: 150px;
+}
+.nav-logo{
+  display: flex;
+  align-items: center;
+}
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.show-links{
+  /* change when adding more links */
+  height: 260px;
+}
+.nav-link{
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  border-top: 1px solid var(--blue);
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+} 
+.nav-link:hover{
+  /* Find better color */
+  color: var(--blue);
+}
+
+@media screen and (min-width:992px) {
+  .nav-btn{
+    display: none;
+  }
+  .navbar{
+    /* height: 7rem; */
+    height: auto;
+    background: var(--orange);
+  }
+  .nav-center{
+    display: flex;
+    align-items: center;
+  }
+  .nav-header{
+    height: auto;
+    margin-right: 2rem;
+  }
+  .nav-links{
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+  }
+  .nav-link{
+    padding: 0;
+    border-top: none;
+    margin-right: 2rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+  }
+}
+/* Hero */
+.hero{
+  /* Sizing */
+  width: 100%;
+  height: 90%;
+  /* background-attachment: fixed; */
+  /* height: 50rem; */
+    
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+  /* Text styles */
+  text-align: center;
+    
+  /* Background styles */
+  background-image: url("./robots.JPG");
+  background-size: cover;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+.hero-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width:620px) {
+  .hero{
+    height: 50%;
+  }
+}
+/* robot highlight */
+.robot-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+/* Diff color backgorunds */
+.duck-sauce
+{
+  background: var(--orange);
+}
+.chimera{
+  background: var(--blue);
+}
+.fanta{
+  background: var(--orange);
+}
+.eclipse{
+  background: var(--blue);
+}
+.robot-word-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.robot-img{
+  margin: 1rem;
+  width: 60%;
+  max-width: 650px;
+}
+.robot-name{
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+.robot-season{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.robot-text{
+  width: 45%;
+  margin-bottom: 2rem;
+}
+/* when big screen */
+@media screen and (min-width:992px) {
+  .robot-content{
+    flex-direction: row;
+    height: 100%;
+  }
+  .robot-word-content{
+    justify-content: left;
+    text-align: left;
+  }
+  .robot-text{
+    width: 70%;
+  }
+  .robot-img{
+    margin-left: 10%;
+  }
+  .about-img{
+    margin-right: 10%;
+  }
+}
