@@ -157,8 +157,16 @@ html, body, section{
   color: white;
   margin-left: 5vw;
 }
+.about-elements{
+  background: var(--orange);
+  margin: 1rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .about-header{
-  color: var(--orange);
+  color: white;
 }
 .about-text{
   width: 60%;
@@ -181,6 +189,14 @@ html, body, section{
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+  .about-elements{
+    flex-direction: column;
+  }
+  .about-img{
+  width: 50%;
+  max-width: 40rem;
+  margin-left: 25%;
+}
   .about-text{
     width: 95%;
   }
