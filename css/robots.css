@@ -69,17 +69,16 @@ p{
   transition: 0.3s;
 } 
 .nav-link:hover{
-  /* Find better color */
   color: var(--blue);
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:900px) {
   .nav-btn{
     display: none;
   }
   .navbar{
-    /* height: 7rem; */
-    height: auto;
+    height: 7rem;
+    /* height: auto; */
     background: var(--orange);
   }
   .nav-center{
@@ -185,7 +184,7 @@ p{
   margin-bottom: 2rem;
 }
 .robot-text{
-  width: 45%;
+  width: 80%;
   margin-bottom: 2rem;
 }
 /* when big screen */
@@ -207,4 +206,15 @@ p{
   .about-img{
     margin-right: 10%;
   }
+}
+
+/* Footer */
+footer {
+    background-color:var(--blue);
+    padding: 2em;
+    border-top: black 1px solid;
+}
+
+.footer-content {
+  text-align: center;
 }
