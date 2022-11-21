@@ -156,8 +156,9 @@ html, body, section{
   justify-content: center;
   text-align: left;
   color: white;
-  padding: 2%;
+  padding: 1%;
   margin-left: 2vw;
+  font-size: 20px;
 }
 .about-elements{
   background: var(--orange);
@@ -207,8 +208,9 @@ html, body, section{
 /* Footer */
 footer {
     background-color:var(--blue);
-    padding: 2em;
+    padding: 2rem;
     border-top: black 1px solid;
+    width: 100%;
 }
 
 .footer-content {
