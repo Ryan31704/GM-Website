@@ -147,6 +147,8 @@ html, body, section{
   display: flex;
   justify-content: center;
   align-items: center; 
+  
+  
 }
 .about-content{
   height: auto;
@@ -161,18 +163,22 @@ html, body, section{
 }
 .about-elements{
   background: var(--orange);
+  border: 2px solid var(--orange);
+  border-radius: 2rem;
+  background: var(--orange);
   margin: 1rem;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1400px;
+  
 }
 .about-header{
   color: white;
 }
 .about-text{
-  width: 80%;
+  width: 100%;
   min-width: 10rem;
   color: white;
   font-size: 20px;

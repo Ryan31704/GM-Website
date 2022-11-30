@@ -161,7 +161,9 @@ p{
   margin-left: 5vw;
 }
 .about-elements{
-  /* background: var(--orange); */
+  /* background: var(--orange);
+  border: 2px solid var(--orange);
+  border-radius: 2rem; */
   margin: 1rem;
   height: auto;
   display: flex;
@@ -213,6 +215,7 @@ p{
   text-align: center;
   flex-direction: column;
   background: var(--orange);
+  height: 100%;
 }
 /* Diff color backgorunds */
 .robot-word-content{
