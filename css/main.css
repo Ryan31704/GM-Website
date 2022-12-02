@@ -128,13 +128,34 @@ p{
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
+/* diff hero images */
+.about-hero{
+  background-image: url("./AboutHero.png");
+  height: 60%;
+}
+.robots-hero{
+  background-image: url("./robots.JPG");
+}
+.team-updates-hero{
+  background-image: url("./robots.JPG");
+}
+.contact-hero{
+  background-image: url("./GMLogoBlue2018-19HighRez.png");
+}
 .hero-text{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
   font-size: 2.5rem;
+}
+.hero-link{
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
 }
 @media screen and (max-width:620px) {
   .hero{
@@ -159,34 +180,38 @@ p{
   justify-content: center;
   text-align: left;
   color: white;
-  margin-left: 5vw;
+  padding: 1%;
+  margin-left: 2vw;
+  font-size: 20px;
 }
 .about-elements{
-  /* background: var(--orange);
+  background: var(--orange);
   border: 2px solid var(--orange);
-  border-radius: 2rem; */
+  border-radius: 2rem;
+  background: var(--orange);
   margin: 1rem;
   height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   max-width: 1400px;
+  
 }
 .about-header{
-  color: black;
+  color: white;
 }
 .about-text{
-  width: 80%;
+  width: 100%;
   min-width: 10rem;
-  color: black;
+  color: white;
   font-size: 20px;
 }
 .about-img{
   width: 50%;
-  max-width: 40rem;
-  margin-right: 2%;
+  max-width: 60rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-left: 25%;
 }
 .flex{
   display: flex;
@@ -210,15 +235,27 @@ p{
 }
 /* robot highlight */
 .robot-content{
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background: var(--orange);
-  height: 100%;
 }
 /* Diff color backgorunds */
+.duck-sauce
+{
+  background: var(--orange);
+}
+.chimera{
+  background: var(--blue);
+}
+.fanta{
+  background: var(--orange);
+}
+.eclipse{
+  background: var(--blue);
+}
 .robot-word-content{
   display: flex;
   justify-content: center;
