@@ -112,6 +112,7 @@ html, body, section{
     
   /* Flexbox stuff */
   display: flex;
+  
   justify-content: center;
   align-items: center;
     
@@ -131,6 +132,7 @@ html, body, section{
   align-items: center;
   text-align: center;
   color: white;
+  font-size: 2.5rem;
 }
 @media screen and (max-width:620px) {
   .hero{
@@ -147,8 +149,6 @@ html, body, section{
   display: flex;
   justify-content: center;
   align-items: center; 
-  
-  
 }
 .about-content{
   height: auto;

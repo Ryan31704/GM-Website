@@ -128,13 +128,23 @@ p{
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
+.contact-hero{
+  background-image: url("./GMLogoBlue2018-19HighRez.png");
+}
 .hero-text{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: center; 
   color: white;
   font-size: 2.5rem;
+}
+.hero-link{
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
 }
 @media screen and (max-width:620px) {
   .hero{
