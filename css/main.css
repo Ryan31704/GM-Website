@@ -132,12 +132,15 @@ p{
 .about-hero{
   background-image: url("./AboutHero.png");
   height: 60%;
+  background-position: 50% 80%;
 }
 .robots-hero{
   background-image: url("./robots.JPG");
+  background-position: 50% 45%;
 }
 .team-updates-hero{
   background-image: url("./robots.JPG");
+  background-position: 50% 45%;
 }
 .contact-hero{
   background-image: url("./GMLogoBlue2018-19HighRez.png");
