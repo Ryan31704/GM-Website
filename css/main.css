@@ -1,7 +1,7 @@
 :root
 {
-  --orange: #FF8200;
-  --blue: #00CEFF;
+  --black: #282828;
+  --blue: #FF8800;
 }
 *{
   padding: 0;
@@ -26,7 +26,7 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--orange);
+  background: var(--black);
 }
 .nav-center{
   max-width: 1250px;
@@ -62,10 +62,10 @@ p{
   text-align: center;
   text-transform: capitalize;
   padding: 1rem 0;
-  border-top: 1px solid var(--blue);
+  border-top: 1px solid var(--black);
   font-size: 1rem;
   text-decoration: none;
-  color: black;
+  color: white;
   transition: 0.3s;
 } 
 .nav-link:hover{
@@ -80,7 +80,7 @@ p{
   .navbar{
     height: 7rem;
     /* height: auto; */
-    background: var(--orange);
+    background: var(--black);
   }
   .nav-center{
     display: flex;
@@ -103,7 +103,7 @@ p{
     margin-right: 2rem;
     font-size: 1.25rem;
     text-decoration: none;
-    color: black;
+    color: white;
   }
 }
 /* Hero */
@@ -136,6 +136,7 @@ p{
 }
 .robots-hero{
   background-image: url("./robots.JPG");
+  background-attachment: fixed;
   background-position: 50% 45%;
 }
 .team-updates-hero{
@@ -144,6 +145,7 @@ p{
 }
 .contact-hero{
   background-image: url("./GMLogoBlue2018-19HighRez.png");
+  background-position: 50% 20%;
 }
 .hero-text{
   display: flex;
@@ -168,7 +170,7 @@ p{
 
 /* About us */
 .about-us .container{
-  background: var(--blue);
+  background: var(--black);
   width: 100%;
   /* height: 25rem; */
   height: auto;
@@ -188,10 +190,10 @@ p{
   font-size: 20px;
 }
 .about-elements{
-  background: var(--orange);
-  border: 2px solid var(--orange);
+  background: var(--var(--black));
+  border: 2px solid var(--var(--black));
   border-radius: 2rem;
-  background: var(--orange);
+  background: var(--var(--black));
   margin: 1rem;
   height: auto;
   display: flex;
@@ -245,19 +247,24 @@ p{
   text-align: center;
   flex-direction: column;
 }
+/* .robot-highlight{
+  background: url("./RobotHighlight.jpg");
+  background-attachment: fixed;
+  background-position: 20% 70%;
+} */
 /* Diff color backgorunds */
 .duck-sauce
 {
-  background: var(--orange);
+  background: var(--black);
 }
 .chimera{
-  background: var(--blue);
+  background: var(--black);
 }
 .fanta{
-  background: var(--orange);
+  background: var(--black);
 }
 .eclipse{
-  background: var(--blue);
+  background: var(--black);
 }
 .robot-word-content{
   display: flex;
@@ -265,6 +272,7 @@ p{
   align-items: center;
   text-align: center;
   flex-direction: column;
+  color: white;
 }
 .robot-img{
   margin: 1rem;
@@ -306,11 +314,12 @@ p{
 
 /* Footer */
 footer {
-    background-color:var(--blue);
+    background-color:var(--black);
     padding: 2em;
-    border-top: black 1px solid;
+    border-top: var(--blue) 1px solid;
 }
 
 .footer-content {
   text-align: center;
+  color: white;
 }
