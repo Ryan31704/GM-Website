@@ -26,7 +26,8 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--black);
+  background: black;
+  /* background: var(--black); */
 }
 .nav-center{
   max-width: 1250px;
@@ -80,7 +81,6 @@ p{
   .navbar{
     height: 7rem;
     /* height: auto; */
-    background: var(--black);
   }
   .nav-center{
     display: flex;
